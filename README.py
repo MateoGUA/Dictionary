@@ -16,13 +16,18 @@ def translate(word):
     return data(word.upper())
   else:
     print("Sorry pal, not answer")
-    
-# Module 3: Word reading
-word = input ("Introduce your word: ")
 
-# Module 4: Output results
-output = translate(word)
-if type output == list then:
-  for item in output:
-    print(item)
-else print(output)
+# Module 3: Generating formated answer
+def format(output)
+  if type output == list then:
+    for item in output:
+      print(item)
+  else print(output)         
+                 
+# Module 4: User interaction
+word = "word"                 
+for word != "exit"
+  word = input("Introduce your word: ")
+  definition = translate(word)
+  format(definition)
+  print()
